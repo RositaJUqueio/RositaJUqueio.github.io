@@ -1,0 +1,29 @@
+#image{
+    max-width: 100%;
+    height: auto;
+   justify-content: center;
+    
+    
+  }
+  
+  img{
+    display: block;
+    margin: auto;
+  }
+  body{
+    background-color: #E5E4E2;
+    font-family: Arial(sans-serif);
+    font-size: 19px;
+  }
+  
+  h1, #intro, #img-caption, h2{
+  text-align: center;
+  }
+  header{
+    padding-top: 1px;
+    padding-bottom: 1px;
+  }
+  
+  #img-div{
+    background-color: white; 
+  }

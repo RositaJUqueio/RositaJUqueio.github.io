@@ -1,0 +1,130 @@
+header div .navigation{
+  top: 0;
+  position: fixed;
+  display: flex;
+  box-shadow: 0 2px 0 rgb(0 0 0 / 40%);
+  z-index: 10;
+   width: 100%;
+   background-color: black;
+   gap: 100px;
+   height: 10vh;
+   justify-items: center;
+}
+.navibar{
+    overflow: hidden;
+   background-color: #333;
+     font-family: Arial;
+ }
+ 
+ .navibar a{
+   float: left;
+   font-size: 18px;
+   color: white;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+ }
+ .dropdown {
+   float: left;
+   overflow: hidden;
+ }
+ 
+ .dropdown .dropbutton {
+   font-size: 16px;
+   border: none;
+   outline: none;
+   color: white;
+   padding: 14px 16px;
+   background-color: inherit;
+   font-family: inherit; 
+   margin: 0; 
+ }
+ 
+ ul{
+   list-style:none;
+ }
+ 
+ 
+ #navbar a:hover, .dropdown:hover .dropbutton {
+   background-color: red;
+ }
+ 
+ .content {
+   display: none;
+   position: absolute;
+   background-color: #f9f9f9;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+ }
+ 
+ .content li a {
+   float: none;
+   color: black;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+   text-align: left;
+ }
+ 
+ content li a:hover {
+   background-color: #ddd;
+ }
+ 
+ .dropdown:hover .content {
+   display: block;
+   background-color: grey;
+ }
+ 
+ body{
+   background-color: #f1f1f1;
+   padding: 5px;
+   font-size: 18px;
+ }
+ 
+ img{
+   width: 100%;
+ }
+ code{
+   background-color: grey;
+   border: 5px solid grey;
+ 
+ }
+ 
+ i{
+   background-color: grey;
+   color: white;
+   border: 1px solid grey;
+ }
+ 
+ code{
+   display: block;
+ }
+ 
+ .long-code{
+   white-space: pre-wrap;
+ }
+ 
+ @media only screen and (min-width: 600px) {
+   Body{
+   width: 100%;
+   }
+   }
+ 
+   #main-doc{
+   font-family: sans-serif;
+   padding-top: 10px;
+ 
+   }
+ 
+   .heading{
+     font-family: sans-serif;
+     position: absolute;
+     top: 40px;
+     font-size: 28;
+   }
+   
+  .main-section li{
+     padding-left: 5px;
+ 
+  }

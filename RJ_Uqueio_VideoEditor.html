@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"></link>
+        <link rel="stylesheet" href="./Styles/VideoEdit_Styles.css"></link>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+        <title>Rosita Uqueio Video Editing Portfolio</title>
+    </head>
+    <body>
+
+        <header>
+            <div class="navbar">
+                <nav>
+                    <h2 id="logo"><span>RJ</span> UQUEIO</h2>
+                    <ul>
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#Projects">Projects</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>  
+
+        </header>
+
+        <main>  
+            <div id="About" class="content1" >
+                <h1>Introduction Video</h1>
+                <iframe src="https://drive.google.com/file/d/1cI-uFkH0ZcGDLOCMIGJjupbG10uvX6TU/preview" id="introvid" allow="autoplay" width="500" height="300">
+            
+                </iframe>
+            </div>
+
+            <div id="Projects"class="container">
+               <h1>Here is some of my work</h1>
+                <div class="row">
+                    <div class="col">
+                        <div class="feature-img">
+                            <img src="./Pictures/museum.jpg" width="100%" >
+                            <img src="./Pictures/play.png" class="play-btn" onclick="playVideo('./Videos/museum1.mp4')">
+                        </div> 
+                    </div>
+
+                    <div class="col">
+                        <div class="small-img-row">
+                            <div class="small-img">
+                                <img src="./Pictures/fashion2.jpg">
+                                <img src="./Pictures/play.png" class="play-btn" onclick="playVideo('./Videos/fashion1.mp4')">
+                            </div>
+                            <p>Advert For a Store Named Famanda</p>
+                        </div>
+
+                        <div class="small-img-row" id="lng">
+                            <div class="small-img">
+                                <img src="./Pictures/ling.png">
+                                <img src="./Pictures/play.png" class="play-btn" onclick="playVideo('./Videos/lnge.mp4')">
+                            </div>
+                            <p>Advert For a Store Named Famanda</p>
+                        </div>
+
+                        <div class="small-img-row">
+                            <div class="small-img">
+                                <img src="./Pictures/friends.jpg">
+                                <img src="./Pictures/play.png" class="play-btn" onclick="playVideo('./Videos/Friends.mp4')">
+                            </div>
+                            <p> Food & Drinks With Friends</p>
+                        </div>
+                    </div>         
+                </div>
+            </div>
+
+            <div class="video-player" id="videoPlayer">
+                <video width="100%" controls id="myVideo">
+                    <source src="./Videos/museum1.mp4" type="video/mp4">
+                </video>
+                <img src="./Pictures/close.png" class="close-btn" onclick="stopVideo()">
+
+            </div>
+
+            <script>
+                var videoPlayer = document.getElementById("videoPlayer");
+                var myVideo = document.getElementById("myVideo");  
+                
+                function stopVideo(){
+                    myVideo.pause();
+                    videoPlayer.style.display = "none";
+                 }
+                 
+                 
+                function playVideo(file){
+                    myVideo.src = file;
+                    videoPlayer.style.display = "block";
+                }
+            </script>
+        </main>
+        <footer id="Contact">
+            <h1>I am available on social media</h1>
+            <a href="https://github.com/RositaJUqueio" target="_blank" class="fa fa-github"></a>
+            <a href="https://twitter.com/LikeAnEagle25?s=09" target="_blank" class="fa fa-twitter"></a>
+            <a class='fab fa-tiktok' href="https://www.tiktok.com/@famandarositauqueio?_t=8ZYYenNruth&_r=1" target="_blank"></a>
+        </footer>
+    </body>
+</html>

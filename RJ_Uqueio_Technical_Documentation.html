@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<htmal lang="en">
+  <head>
+    <link rel="stylesheet" href="./Styles/TechnicalDoc_styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <header>
+
+      <nav id="navbar">
+        <header>
+          <h1 class="heading">C-Language Documentation</h1></header>
+          <div class="navigation">
+          <ul class="navibar">
+            <li>
+             <li><a class="nav-link" href="#Introduction">Introduction</a></li> 
+             <div class="dropdown">
+               <button class="dropbutton">Learn More
+                 <i class="fa fa-caret-down"></i>
+               </button>
+               <div class="content">
+            <li><a class="nav-link" href="#What_you_should_already_know">What you should already know</a></li>
+            <li><a class="nav-link" href="#C_language,_C#_and_C++" >C language, C# and C++</a></li>
+            <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
+            <li><a class="nav-link" href="#Variables">Variables</a></li>
+            <li><a class="nav-link" href="#Declaring_variables">Declaring variables</a></li>            
+            <li><a class="nav-link" href="#Constants" >Constants</a></li>
+            <li><a class="nav-link" href="#Data_types">Data types</a></li>
+            <li><a class="nav-link" href="#Operators">Operators</a></li>
+            <li><a class="nav-link" href="#Conditionals">Conditionals
+</a></li>
+             <li><a class="nav-link" href="#Loops">Loops</a></li> 
+            
+            </div> 
+            </div> 
+            <li><a class="nav-link" href="#Tutorials" >Tutorials</a></li>
+            <li><a class="nav-link" href="#References" >References</a></li>
+          </ul>
+          </div>
+      </nav>
+
+    </header>
+    <main  id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header><h1>Introduction<h1></header>
+        <p>C is one of the most widely known programming
+languages. It is used as the reference language for
+computer science courses all over the world, and it's
+probably the language people learn the most in
+schools along with Python and Java.</p>
+<p>
+It is widely used in embedded devices and it
+powers most of the Internet servers, which are built
+using Linux. The Linux kernel is built using C, and this
+also means that C powers the core of all Android
+devices. We can say that C code runs a good portion
+of the entire world.</p>
+<p>C is a compiled programming
+language, like Go, Java, Swift or Rust.Other popular
+programming languages like Python, Ruby or JavaScript are interpreted.<br><br> 
+The difference is consistent: a compiled language generates a binary file that can be directly executed and distributed.
+</p> 
+      </section>
+
+      <section class="main-section" id="What_you_should_already_know">
+        <header><h1>What you should already know</h1></header>
+        <p>This guide assumes you have the following basic background:</p>
+            <li>A general understanding of the Internet and the World Wide Web (WWW).</li>
+            <li>Some programming experience. If you are new to programming, try one of the tutorials linked on the main page about C language</li>  
+      </section>
+
+      <section class="main-section" id="C_language,_C#_and_C++">
+        <header><h1>C language, C# and C++</h1></header>
+        <p>C++ is a low level programming language that adds object-oriented features to its base language C whereas C# is a high level language.
+          <img
+          src="https://www.upwork.com/mc/documents/Differences.png"></img>
+        </p>
+      </section>
+
+      <section class="main-section" id="Hello_world">
+        <header><h1>Hello world</h1></header>
+        <p>To get started with writing C language, open your <a href="https://www.onlinegdb.com/online_c_compiler">Compiler</a> and write your first "Hello world" C language code:</p>
+        <img src="https://i0.wp.com/www.agilenative.com/wp-content/uploads/2017/01/001-Agile-Hello-World.png?resize=1024%2C634&ssl=1"></img>
+        <p>Press the Run button to see the result.</p>
+      </section>
+
+      <section class="main-section" id="Variables">
+        <header><h1>Variables</h1></header>
+        <p>C is a statically typed language.This means that any variable has an associated type,and this type is known at compilation time.</p>
+<p>
+This is very different than how you work with variables in Python, JavaScript, PHP and other interpreted languages.</p>
+      </section>
+
+      <section class="main-section" id="Declaring_variables">
+        <header><h1>Declaring variables</h1></header>
+        <p>When you create a variable in C, you have to specify the type of a variable at the declaration</p>
+        <p>In this example we initialize a variable <i>age</i> with type <i>int</i>:</p>
+        <code>
+          int age;      
+        </code>
+        <p>A variable name can contain any uppercase or lowercase letter, can contain digits and the underscore character, but it can’t start with a digit. <i>AGE</i> and <i>Age10</i> are valid variable names, <i>1age</i> is not.</p>
+        <p>We can also assign a value while declaring a variable:</p>
+        <code>
+          int age = 25;
+        </code>
+        <p>In this case we have assigned the value <i>25</i> to the variable <i>'age'</i>.</p>
+      </section>
+
+      <section class="main-section" id="Constants">
+        <header><h1>Constants</h1></header>
+        <p>A constant is declared similarly to variables, except it is prepended with the <i>const</i> keyword, and you always need to specify a value.<br><br>
+          Like this:</p>
+          <code>
+            const int age = 37;
+          </code>
+          <p>Another way to define constants is by using this syntax:</p>
+          <code>
+            #define AGE 37
+          </code>
+          <p>In this case, you don’t need to add a type, and you don’t also need the <i> = equal sign </i>, and you omit the semicolon at the end.<br>
+The C compiler will infer the type from the value specified, at compile time.
+</p>
+      </section>
+
+      <section class="main-section" id="Data_types">
+        <header><h1>Data types</h1></header>
+        <p>The C built-in data types are:</p> 
+        <li>int</li>
+        <li>char</li> 
+        <li>short</li> 
+        <li>long</li>
+        <li>float</li> 
+        <li>double</li> 
+        <li>long</li> 
+        <li>double</li>
+
+        <p>The <i>char</i> type is commonly used to store letters of the ASCII chart, but it can be used to hold small integers from <i>-128 to 127</i>. It takes at least 1 byte.
+<i>Int</i> takes at least 2 bytes. short takes at least 2 bytes. long takes at least 4 bytes.</p>
+
+<p>For all the above data types, we can prepend <i>unsigned</i> to start the range at 0, instead of a negative number.
+
+<li><i>unsigned char</i> will range from 0 to at least 255</li>
+<li><i>unsigned int</i> will range from 0 to at least 65,535</li>
+<li><i>unsigned short</i> will range from 0 to at least 65,535</li>
+<li><i>unsigned long</i> will range from 0 to at least 4,294,967,295</li></p>
+      </section>
+
+      <section class="main-section" id="Operators">
+        <header><h1>Operators</h1></header>
+        <p>C offers us a wide variety of operators that we can use to operate on data.In particular, we can identify various groups of operators:</p>
+        <p>
+4.1. Arithmetic operators<br>
+4.2. Comparison operators<br>
+4.3. Logical operators<br>
+4.4. Compound assignment operators<br>
+4.5. Miscellaneous operators<br>
+4.5.2. The ternary operator<br>
+4.5.2.  sizeof<br>
+4.6. Operator precedence
+</p>
+      </section>
+
+      <section class="main-section" id="Conditionals">
+        <header><h1>Conditionals</h1></header>
+        <p>Any programming language provides the programmers the ability to perform choices.
+We want to do X in some cases, and Y in other cases.<br>C provides us 2 ways to do so.
+The first is the if statement, with its else helper, and the second is the switch statement.
+</p>
+<li><b>If</b></li>
+<p>In an if statement, you can check for a condition to be true, and then execute the block provided in the curly brackets.</p>
+<code class="long-code">
+  int a = 1;
+
+if (a == 2) {
+  /* do something */
+} else if (a == 1) {
+  /* do something else */
+} else {
+  /* do something else again */
+}
+</code>
+<p>Append an else block to execute a different block if the original condition turns out to be false.</p>
+<li><b>Switch</b></li>
+<p>If you need to do too many if / else / if blocks to perform a check, <i>switch</i> can be useful.</p>
+<code class="long-code">
+  int a = 1;
+
+switch (a) {
+  case 0:
+    /* do something */
+    break;
+  case 1:
+    /* do something else */
+    break;
+  case 2:
+    /* do something else */
+    break;
+  default:
+    /* handle all the other cases */
+    break;
+}
+</code>
+<p>You can provide a variable as condition, and a series of <i>case</i> entry points for each value you expect.<br>
+   The <i>break</i> keyword at the end of each <i>case</i> is to avoid the next <i>case</i> to be executed when the one before ends.
+   You can add a “catch-all” case at the end, labeled <i>default</i>:
+</p>
+
+      </section>
+
+      <section class="main-section" id="Loops">
+        <header><h1>Loops</h1></header>
+        <p>C offers us three ways to perform a loop: for loops, while loops and do while loops.</p>
+
+        <li><b>For Loops</b></li>
+        <p>Using the for keyword we can define the rules of the loop up front, and then provide the block that is going to be executed repeatedly.
+Like this:</p>
+<code class="long-code">
+  for (int i = 0; i <= 10; i++) {
+  /* instructions to be repeated */
+}
+</code>
+<p>The <i>(int i = 0; i <= 10; i++)</i> block contains 3 parts of the looping details:<br>
+1. the initial condition <i>(int i = 0)</i><br>
+2. the test <i>(i <= 10)</i><br>
+3. the increment <i>(i++)</i></p>
+        <li><b>While Loops</b></li>
+        <p><i>While</i> loop is simpler to write than a <i>for</i> loop.Instead of defining all the loop data up front when you start the loop(in the for loop),you just check for a condition:</p>
+<code class="long-code">
+int i = 0;
+
+while (i < 10) {
+/* do something */
+i++;
+}
+</code><br>
+
+        <li><b>Do while Loops</b></li>
+        <p>When you want to always execute a block, and then maybe repeat it.
+This is done using the do while keyword.</p>
+<code class="long-code">
+int i = 0;
+
+do {
+  /* do something */
+  i++;
+} while (i < 10);
+</code>
+<p>The block that contains the <i>/* do something */</i> comment is always executed at least once, regardless of the condition check at the bottom.</p>
+      </section>
+        <section class="main-section" id="Tutorials">
+        <header><h1>Tutorials</h1></header>
+        <p>Learn languages on <a href="https://www.w3schools.com/">w3-Schools</a></p>
+        </section>
+
+      <section class="main-section" id="References">
+        <header><h1>References</h1></header>
+        <p>The documentation on this page is taken from <a href="https://www.upwork.com/resources/c-sharp-vs-c-plus-plus">Upwork</a> and <a href="https://thevalleyofcode.com/c/">The Valley Of code</a>.</p>
+      </section>
+    </main>
+  </body>
+</html>
